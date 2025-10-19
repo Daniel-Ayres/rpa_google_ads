@@ -29,7 +29,7 @@ Todo o processo é registrado por logs, garantindo rastreabilidade da execução
 rpa_google_ads/
 │
 ├── data/                     # Armazena as planilhas e imagens baixadas (não versionadas)
-├── logs/                     # Contém os arquivos de log da execução
+├── logs/                     # Contém os arquivos de log da execução (não versionadas)
 │
 ├── src/                      # Código-fonte organizado por responsabilidade
 │   ├── __pycache__/          # (Gerado automaticamente pelo Python)
