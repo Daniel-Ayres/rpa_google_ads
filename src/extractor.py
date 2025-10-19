@@ -44,7 +44,7 @@ def extrair_produtos(driver, termo_pesquisa="Geladeira", limite=20):
     url = "https://www.google.com/search?" + urlencode(params)
     driver.get(url)
 
-    WebDriverWait(driver, 20).until(
+    WebDriverWait(driver, 30).until(
         EC.presence_of_element_located((By.CLASS_NAME, "pla-unit-container"))
     )
 
@@ -78,7 +78,7 @@ def extrair_produtos(driver, termo_pesquisa="Geladeira", limite=20):
                 })
 
         driver.execute_script("window.scrollBy(0, document.body.scrollHeight);")
-        time.sleep(5)
+        time.sleep(8)
         tentativas += 1
 
     logging.info(f"{len(produtos)} produtos coletados.")
