@@ -130,28 +130,31 @@ logs/execucao.log
 --------------------------------------------------------------------------------
 Iniciando RPA Google Ads...
 
-Buscando produtos de: Geladeira
+
+Buscando produtos de: Ar condicionado
+
 
 Produtos ordenados do mais barato para o mais caro:
 --------------------------------------------------------------------------------
 
 #01
 
-Título   : Geladeira Refrigerador HQ Defrost 230 Litros Cinza HQ-230RDF (127V)
-Preço    : R$ 1.659,98
+Título   : Ar condicionado janela 7500 BTUsConsul frio com design moderno - CCB07FB 220V
+Preço    : R$ 1.439,00
 Loja     : Amazon.com.br
-URL Loja     : https://www.amazon.com.br/Geladeira-Refrigerador-HQ-Defrost-HQ-230RDF/dp/B0DVDFMXX8?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3LGV2SX75WN63
-Imagem URL   : https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQNkba1LM3fx3_YrZaUhjn0XCzDg-SwWkP0x5neyxVPe7iC8vDMUiSEgS6H7eAUhXQSkmaWBiRGxHsol2ZGZZNbu6l9NbG4znhxjoQS7D_OBkdERTJmFfpwif8Bcudd3o4x9_VH4aM&usqp=CAc
+URL Loja     : https://www.amazon.com.br/condicionado-janela-Consul-design-moderno/dp/B0BZ2DBPZT?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3LGV2SX75WN63
+Imagem URL   : https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR7idpv8_yQo0u5RTiBIwpq1FKiBK1bu_EuDw3pmK-C0T3K7xiQUQ2qs6fES1XsvWQHMsCtPSkTJGMF4_dwWaWoNXgYT318_vPUvEAcTZRWDW_rc4Xdp0wpgWBibfBdzDgQ-YD3PcFmUg&usqp=CAc
 --------------------------------------------------------------------------------
 
 #02
 
-Título   : Refrigerador 240L 1 Porta Classe A 110 Volts, Branco, Electrolux
-Preço    : R$ 1.733,99
-Loja     : Amazon.com.br
-URL Loja     : https://www.amazon.com.br/Refrigerador-Degelo-Pr%C3%A1tico-Defrost-Electrolux/dp/B076BDR1P7?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A3LGV2SX75WN63
-Imagem URL   : https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTNJMSo4WKXvV9GjOtPsvSzJ6yWCvFOvIeGEqnrggR7T_nM_35PejPedbg5jhUMH1uQMUw5RLMp2bVNLJpIEwWpcVl4B_Lo4JDhBxiwm1N49bu-Y14H2z0aNbBEgJhcaiNhbv5mLKbl&usqp=CAc
+Título   : Ar Condicionado Janela 7500BTUs Frio 127V Mecânico Midea
+Preço    : R$ 1.476,90
+Loja     : Leroy Merlin
+URL Loja     : https://www.leroymerlin.com.br/ar-condicionado-janela-7500-btus-frio-branco-127v--110v--mecanico-midea_92031555?store_code=57
+Imagem URL   : https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThkQy8KO1LlADlJAlA2gSprV2OlLB-xufBNSDvaGXXQADMNtK5csVRAJWoQdSe7XdRgMHYe-dfhg8TINIszteTYcIcGmBKUVaW0CcWt4LfMsGIjA4Wd8mvttkBPNrXXy5HuaRQ9nLE_FI&usqp=CAc
 --------------------------------------------------------------------------------
+
 
 ...
 
