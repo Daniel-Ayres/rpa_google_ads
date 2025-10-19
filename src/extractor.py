@@ -4,7 +4,7 @@
     - Acessa o Google Shopping usando Selenium e BeautifulSoup.
     - Coleta título, preço, loja, link e imagem dos produtos encontrados.
     - Limita a extração a uma quantidade máxima de produtos (padrão: 20).
-    - Baixa e salva as imagens localmente na pasta configurada.
+    - Baixa e salva as imagens localmente na pasta configurada, com verificação.
     - Gera uma planilha Excel com os dados extraídos.
     - Registra logs do processo de execução.
 
@@ -29,10 +29,12 @@ from src.utils import limpar_nome_arquivo, salvar_imagem
 from src.config import PASTA_IMAGENS, ARQUIVO_EXCEL
 import logging
 
+
 def extrair_produtos(driver, termo_pesquisa="Geladeira", limite=20):
     logging.info(f"Iniciando extração de: {termo_pesquisa}")
-    print(f"Buscando produtos de: {termo_pesquisa}")
+    print(f"\nBuscando produtos de: {termo_pesquisa}\n")
 
+    # Monta a URL da busca
     params = {
         "q": termo_pesquisa,
         "tbm": "shop",
@@ -44,12 +46,14 @@ def extrair_produtos(driver, termo_pesquisa="Geladeira", limite=20):
     url = "https://www.google.com/search?" + urlencode(params)
     driver.get(url)
 
+
     WebDriverWait(driver, 30).until(
         EC.presence_of_element_located((By.CLASS_NAME, "pla-unit-container"))
     )
 
     produtos = []
     tentativas = 0
+
 
     while len(produtos) < limite and tentativas < 15:
         html = driver.page_source
@@ -78,17 +82,27 @@ def extrair_produtos(driver, termo_pesquisa="Geladeira", limite=20):
                 })
 
         driver.execute_script("window.scrollBy(0, document.body.scrollHeight);")
-        time.sleep(8)
+        time.sleep(3)
         tentativas += 1
 
     logging.info(f"{len(produtos)} produtos coletados.")
-
     os.makedirs(PASTA_IMAGENS, exist_ok=True)
 
-    for prod in produtos:
+
+
+    for i, prod in enumerate(produtos, start=1):
         nome_img = limpar_nome_arquivo(prod["titulo"]) + ".png"
         caminho_img = os.path.join(PASTA_IMAGENS, nome_img)
-        salvar_imagem(prod["img_url"], caminho_img)
+
+        sucesso = salvar_imagem(prod["img_url"], caminho_img)
+
+        if sucesso and os.path.exists(caminho_img):
+            logging.info(f"Imagem salva com sucesso: {nome_img}")
+        else:
+            logging.warning(f"Falha ao salvar imagem: {nome_img}")
+
+
+        time.sleep(1.5)
 
 
     df = pd.DataFrame(produtos)
