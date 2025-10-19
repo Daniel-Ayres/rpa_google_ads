@@ -22,7 +22,7 @@ def main():
 
     driver = iniciar_navegador()
     try:
-        extrair_produtos(driver, termo_pesquisa="Playstation 5", limite=20)
+        extrair_produtos(driver, termo_pesquisa="Ar condicionado", limite=20)
     finally: 
         logging.info(f"Fechando o navegador.")
 
