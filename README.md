@@ -160,4 +160,5 @@ Imagem URL   : https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTNJMSo4WK
 
 ## 🧑‍💻 Autor
 
-Projeto desenvolvido por [Daniel Ayres] para fins de estudo e prática de automação RPA com Python e consumo de APIs REST.
+Projeto desenvolvido por [Daniel Ayres] para fins de estudo e prática de automação RPA com Python,
+focando em raspagem de dados (Web Scraping), manipulação de planilhas e processos automatizados de coleta de informações.
