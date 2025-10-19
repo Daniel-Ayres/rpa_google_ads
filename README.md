@@ -3,7 +3,7 @@
 Este projeto é uma automação RPA desenvolvida em Python que realiza pesquisas no Google Shopping, coleta automaticamente informações sobre produtos (título, preço, loja, link e imagem), salva os dados em uma planilha Excel e baixa as imagens localmente.
 Todo o processo é registrado por logs, garantindo rastreabilidade da execução.
 
-⚙️ Observação: no momento, o script está fixo para realizar pesquisas sobre “Geladeira” em geral, mas pode ser facilmente adaptado para outros produtos modificando o parâmetro termo_pesquisa no arquivo main.py.
+⚙️ Observação: no momento, o script está fixo para realizar pesquisas sobre “Playstation 5” em geral, mas pode ser facilmente adaptado para outros produtos modificando o parâmetro termo_pesquisa no arquivo main.py.
 
 ---
 
